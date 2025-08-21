@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemplo de hover</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div:hover{
+            color: red;
+        }
+
+        div > p { /*aqui ele quis dizer que dentro da div tem uma paragrafo, porem ele esta escondido/oculto. por isso esse comando abaixo*/
+            display: none;
+        }
+
+        div:hover > p {  /*aqui ele fez com que esse paragrafo que esta oculto aparecesse, e ele colocou como queria que esse paragrafo aparecese ao passar o mouse em cima do texto que esta dentro da div */
+            display: block;
+            color: white;
+            background-color: red;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>ex de hover</h1>
+    <p>passe o mouse sob o texto abaixo</p>
+    <div>
+        passe o mouse aqui
+        <p>TEXTO ESCONDIDO...</p>
+    </div>
+    <p>fim do exemplo</p>
+</body>
+</html>
